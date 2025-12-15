@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>touch_detection_evaluation</name>
+  <version>0.0.1</version>
+  <description>Package for evaluating touch detection on a table surface using 2 Orbbec RGBD Cameras.</description>
+  <maintainer email="dimitar.dimeski23@gmail.com">Dimitar Dimeski</maintainer>
+  <license>Apache-2.0</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

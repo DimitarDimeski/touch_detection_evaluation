@@ -16,10 +16,10 @@ class ArucoDisplayNode(Node):
         self.declare_parameter('height', 1080)
         self.declare_parameter('marker_size', 200)
         self.declare_parameter('dictionary_id', cv2.aruco.DICT_4X4_50)
-        self.declare_parameter('top_offset', 0)
-        self.declare_parameter('bottom_offset', 0)
-        self.declare_parameter('left_offset', 0)
-        self.declare_parameter('right_offset', 0)
+        self.declare_parameter('top_offset', 100)
+        self.declare_parameter('bottom_offset', 100)
+        self.declare_parameter('left_offset', 100)
+        self.declare_parameter('right_offset', 100)
         self.declare_parameter('output_yaml', 'calibration.yaml')
 
         # Get parameter values

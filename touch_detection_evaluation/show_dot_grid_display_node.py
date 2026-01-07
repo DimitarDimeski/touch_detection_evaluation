@@ -82,11 +82,6 @@ class DotGridDisplayNode(Node):
         # Alternate between normal and inverted image
         image_to_show =  self.image
 
-        # Shutdown if calibration file exists
-        if os.path.isfile(self.output_yaml):
-            self.get_logger().info("Calibration complete. Shutting down dot grid display node.")
-            rclpy.shutdown()
-            return
 
         # Check if window was closed
         if cv2.getWindowProperty(self.window_name, cv2.WND_PROP_VISIBLE) < 1:

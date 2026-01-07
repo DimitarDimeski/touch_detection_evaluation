@@ -124,9 +124,9 @@ def generate_launch_description():
         executable='screen_calibration_node',
         name='screen_calibration_node',
         parameters=[
-            {'rgb_topic': '/camera/color/image_raw'},
-            {'depth_topic': '/camera/depth/image_raw'},
-            {'depth_info_topic': '/camera/depth/camera_info'},
+            {'rgb_topic': '/camera_01/color/image_raw'},
+            {'depth_topic': '/camera_01/depth/image_raw'},
+            {'depth_info_topic': '/camera_01/depth/camera_info'},
             {'output_yaml': calibration_file},
             {'rotate_image': EnvironmentVariable('ROTATE_IMAGE', default_value='False')},
         ],

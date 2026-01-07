@@ -40,7 +40,7 @@ def generate_launch_description():
         ),
         launch_arguments={
             'camera_name': 'camera_01',
-            'usb_port': '2-1',
+            'usb_port': '2-1.3',
             'device_num': '2',
             'sync_mode': 'primary',
             'trigger_out_enabled': 'true',

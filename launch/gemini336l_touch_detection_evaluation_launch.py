@@ -139,12 +139,8 @@ def generate_launch_description():
             cmd=[
                 'ros2', 'bag', 'record',
                 '-o', '/evaluation_data/touch_evaluation_bag',
-                '--compression-format ',  
-                'zstd ',
                 '/camera_01/color/image_raw',
                 '/camera_01/depth/image_raw',
-                '/camera_02/color/image_raw',
-                '/camera_02/depth/image_raw',
             ],
             output='screen'
         )
